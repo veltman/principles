@@ -24,7 +24,7 @@ I manage to abide by some of these things some of the time.
 
 * If an input is going to be numeric, use the "number" input type so mobile devices can show the appropriate keyboard.
 
-* Use loading indicators for XHR requests, even if they're likely to be very fast.  You never know how slow or broken it might be for a user.  They should know if something is missing.```
+* Use loading indicators for XHR requests, even if they're likely to be very fast.  You never know how slow or broken it might be for a user.  They should know if something is missing.
 
 * If someone's going to have to scroll, make it clear that there's more below the fold.
 
