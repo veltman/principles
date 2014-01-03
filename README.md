@@ -24,7 +24,7 @@ I manage to abide by some of these things some of the time.
 
 * If an input is going to be numeric, use the "number" input type so mobile devices can show the appropriate keyboard.
 
-* Use loading indicators for XHR requests, even if they're likely to be very fast.  You never know how slow or broken it might be for a user.  They should know if something is missing.
+* Use loading indicators for XHR requests, even if they're likely to be very fast.  You never know how slow or broken it might be for a user.  They should know if something is missing.```
 
 * If someone's going to have to scroll, make it clear that there's more below the fold.
 
@@ -104,13 +104,15 @@ I manage to abide by some of these things some of the time.
 
 * Cache jQuery and D3 selectors that are going to be reused:  
 
-    $("div#sidebar").html("Don't do");
-    $("div#sidebar").html("this");
+```
+$("div#sidebar").html("Don't do");
+$("div#sidebar").html("this");
 
-    var $sidebar = $("div#sidebar");
+var $sidebar = $("div#sidebar");
 
-    $sidebar.html("Do this");
-    $sidebar.html("instead");
+$sidebar.html("Do this");
+$sidebar.html("instead");
+```
 
 * CamelCase or lowercase?  Tabs or spaces?  Hyphens or underscores?  Picking a system and being consistent is more important than which you choose.
 
@@ -136,11 +138,13 @@ I manage to abide by some of these things some of the time.
 
 * Beware the four C's of working text data: character encoding, capitalization, curly quotes, and cwhitespace.
 
-    "Côte d'Ivoire" //damn it
-    "Cote d’Ivoire" //crap
-    "cote d'ivoire" //whoops
-    "Côte d'Ivoire " //what the?
-    "Ivory Coast" //COME ON
+```
+"Côte d'Ivoire" //damn it
+"Cote d’Ivoire" //crap
+"cote d'ivoire" //whoops
+"Côte d'Ivoire " //what the?
+"Ivory Coast" //COME ON
+```
 
 ## Site setup ##
 
