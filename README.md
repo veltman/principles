@@ -6,21 +6,21 @@ I manage to abide by some of these things some of the time.
 
 ## Design/UI ##
 
-* The best way to make something durable and flexible is not to get too fancy in the first place.  You only have to fix the web to the extent that you break it first.  Think hard before deciding to implement browser-specific functionality or weird hacks.
+* The best way to make something durable and flexible is not to get too fancy in the first place.  You only have to fix the web to the extent that you break it first.
 
 * Make sure states of your app that you want to be shareable have unique URLs.  Use hashes if necessary.  Assume that someone will copy the URL directly from the address bar, not from your "Share this!" widget.
 
 * You need a very good reason to have more than two fonts per page.
 
 * Don't use tiny font sizes, and be generous with line spacing for body text.
-. You choose who can commit.
+
 * Don't make tiny click targets.  Assume that someone will be mashing that "X" icon with a fingertip, not a cursor.
 
 * Redundancy is a useful design technique.  Labels+icons, color+width, etc.
 
-* Embrace vertical scrolling, don't break it.  Scroll-based animation is annoying and very brittle.  Stop turning the web into a popup book.
+* Embrace vertical scrolling, don't break it.  Scroll-based animation is annoying.  Stop turning the web into a popup book.
 
-* Don't rely heavily on hover states to make something interesting.  Even if someone has a mouse, requiring your users to go on a scavenger hunt is annoying.
+* Don't rely heavily on hover states to make something interesting.  Even if most of them have a mouse, requiring your users to go on a scavenger hunt is annoying.
 
 * If an input is going to be numeric, use the "number" input type so mobile devices can show the appropriate keyboard.
 
@@ -34,7 +34,7 @@ I manage to abide by some of these things some of the time.
 
 * Text should be text, not text in an image.
 
-* Make it clear that clickable things are clickable.  They should have `cursor: pointer`, and if they're text, they should be distinct from other text.
+* Make it clear that clickable things are clickable.  They should have `cursor: pointer`, have hover states, and if they're text, they should be distinct from other text.
 
 * Avoid lightbox modals if possible.
 
@@ -72,7 +72,7 @@ I manage to abide by some of these things some of the time.
 
 * Don't use more than three or four colors in a categorical scheme.  If you have more categories than that, you probably need to use something besides color to differentiate.
 
-* Be mindful of colo. You choose who can commit.r blindness when picking combinations.  Use something like [Colorbrewer](http://colorbrewer2.org/) to pick your scales.
+* Be mindful of color blindness when picking combinations.  Use something like [Colorbrewer](http://colorbrewer2.org/) to pick your scales.
 
 * Don't make slideshows/lists without a "view all" option.  Better yet, make it "view all" from the start with vertical scrolling instead of requiring a dozen clicks.
 
@@ -102,19 +102,19 @@ I manage to abide by some of these things some of the time.
 
 * Include version numbers in the filenames of JS libraries.
 
-* Cache jQuery and D3 selectors that are going to be reused:
-	
-	$("div#sidebar").html("Don't do");
-	$("div#sidebar").html("this");
+* Cache jQuery and D3 selectors that are going to be reused:  
 
-	var $sidebar = $("div#sidebar");
+    $("div#sidebar").html("Don't do");
+    $("div#sidebar").html("this");
 
-	$sidebar.html("Do this");
-	$sidebar.html("instead");
+    var $sidebar = $("div#sidebar");
+
+    $sidebar.html("Do this");
+    $sidebar.html("instead");
 
 * CamelCase or lowercase?  Tabs or spaces?  Hyphens or underscores?  Picking a system and being consistent is more important than which you choose.
 
-* Don't poll for updates constantly.  Checking for new data every 5 seconds is probably overkill unless you're showing stock prices.
+* Don't poll for updates constantly.  How up-to-the-second does the data actually need to be?
 
 ## Working with data ##
 
@@ -136,11 +136,11 @@ I manage to abide by some of these things some of the time.
 
 * Beware the four C's of working text data: character encoding, capitalization, curly quotes, and cwhitespace.
 
-	"Côte d'Ivoire" //damn it
-	"Cote d’Ivoire" //crap
-	"cote d'ivoire" //whoops
-	"Côte d'Ivoire " //what the?
-	"Ivory Coast" //COME ON
+    "Côte d'Ivoire" //damn it
+    "Cote d’Ivoire" //crap
+    "cote d'ivoire" //whoops
+    "Côte d'Ivoire " //what the?
+    "Ivory Coast" //COME ON
 
 ## Site setup ##
 
@@ -188,9 +188,9 @@ I manage to abide by some of these things some of the time.
 
 * Deciding how much to care about different types of users requires knowing your users in the first place.  Understand who they are, what they want, what browsers they use, what devices they use, etc.  Make that the starting point when deciding what level of resources to devote to addressing different scenarios.
 
-* Write good documentation.  Be specific about dependencies and installation.  Use real-world scenarios and names in examples, no `foo` and `bar`.
+* Set time aside to write good documentation.  Be specific about dependencies and installation.  Use real-world scenarios and variable names in your examples, no `foo` and `bar` gibberish.
 
-## Further reading ##
+## Some further reading ##
 
 * [NPR Apps best practices](https://github.com/nprapps/bestpractices)  
 
