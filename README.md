@@ -134,9 +134,11 @@ $sidebar.html("instead");
 
 * Work with simple text files when possible.  Avoid the overhead of a database unless your data really demands it.
 
+* Make sure you know the way(s) that a dataset represents unavailable values.  It could be a blank space, it could be a dash, it could be an asterisk.  It could be multiple things.  Some places will use 999 or 99.999 to mean a number that's not available.
+
 * Cache pages while you scrape them so that you don't have to start over if you were scraping the wrong thing.
 
-* Beware the four C's of working text data: character encoding, capitalization, curly quotes, and cwhitespace.
+* Beware the four C's of working with text data: character encoding, capitalization, curly quotes, and cwhitespace.
 
 ```
 "Côte d'Ivoire" //damn it
