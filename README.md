@@ -20,7 +20,7 @@ I manage to abide by some of these things some of the time.
 
 * Embrace vertical scrolling, don't break it.  Scroll-based animation is annoying.  Stop turning the web into a popup book.
 
-* Don't rely heavily on hover states to make something interesting.  Even if most of them have a mouse, requiring your users to go on a scavenger hunt is annoying.
+* Don't rely heavily on hovers to make something interesting.  Even if most of them have a mouse, requiring your users to go on a scavenger hunt is obnoxious.
 
 * If an input is going to be numeric, use the "number" input type so mobile devices can show the appropriate keyboard.
 
@@ -37,6 +37,8 @@ I manage to abide by some of these things some of the time.
 * Make it clear that clickable things are clickable.  They should have `cursor: pointer`, have hover states, and if they're text, they should be distinct from other text.
 
 * Avoid lightbox modals if possible.
+
+* Don't make your location-based app *require* a user's location.  Be prepared for them to say no.  More generally, if you have a very personalized app, think about what interesting things you can show someone who doesn't want to get personal.
 
 * Don't give someone 20 equally interesting things to do right off the bat.  Give them a more focused presentation upfront before turning them loose.
 
@@ -118,6 +120,8 @@ $sidebar.html("instead");
 
 * Don't poll for updates constantly.  How up-to-the-second does the data actually need to be?
 
+* Don't leave console debugging messages in your production code.
+
 ## Working with data ##
 
 * Clean and transform your raw data stepwise.  Make it a repeatable process.  Use Makefiles or shell scripts if you can.
@@ -179,6 +183,8 @@ $sidebar.html("instead");
 * If you use AWS, have at least one non-AWS fallback.
 
 * Use a staging server.
+
+* Don't rely on browser sniffing.  Detect support for relevant features instead.  And if you are doing too much of that, you probably got too fancy (see bullet #1).
 
 * If you're using a framework, make sure verbose error messages are off in production.
 
