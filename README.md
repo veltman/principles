@@ -26,7 +26,7 @@ I manage to abide by some of these things some of the time.
 
 * Use loading indicators for XHR requests, even if they're likely to be very fast.  You never know how slow or broken it might be for a user.  They should know if something is missing.
 
-* If someone's going to have to scroll, make it clear that there's more below the fold.
+* In mobile browsers, the scrollbar is often subtle or invisible.  Check where your page gets cut off at those sizes and make sure it's apparent that there's more below the fold.
 
 * Don't break browser zoom (things like full-window maps are an exception).
 
@@ -43,6 +43,8 @@ I manage to abide by some of these things some of the time.
 * Don't give someone 20 equally interesting things to do right off the bat.  Give them a more focused presentation upfront before turning them loose.
 
 * Small multiples reflow easily.
+
+* Web design is not a contest to see who can have the fewest empty pixels.  Whitespace is a valuable asset for focusing a user's attention.  Let things breathe.
 
 * Limit the maximum width of text blocks to something like 900px.  Anything wider becomes hard to scan.
 
