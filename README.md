@@ -88,6 +88,8 @@ I manage to abide by some of these things some of the time.
 
 * For world maps, consider using a Robinson projection.  For US maps, consider using an Albers projection.  Whatever the map, be aware of the distortions of your chosen projection.
 
+* It needs repeating: don't make 3D charts.
+
 ## HTML/JavaScript ##
 
 * Specify a `charset`, presumably `utf-8`.
