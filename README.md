@@ -217,3 +217,5 @@ $sidebar.html("instead");
 * [When maps shouldn't be maps](http://www.ericson.net/content/2011/10/when-maps-shouldnt-be-maps/)
 
 * [Shawn Allen's web how-to](https://github.com/shawnbot/web-howto/wiki)
+
+* [The Twelve-Factor App](http://12factor.net)
